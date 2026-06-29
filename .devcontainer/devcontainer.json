@@ -1,0 +1,38 @@
+{
+  "name": "Tarefator - .NET 10 Development",
+  "image": "mcr.microsoft.com/devcontainers/dotnet:10.0",
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "GitHub.copilot",
+        "GitHub.copilot-chat",
+        "ms-dotnettools.csdevkit"
+      ],
+      "settings": {
+        "editor.inlineSuggest.enabled": true,
+        "editor.formatOnSave": true,
+        "extensions.ignoreRecommendations": false,
+        "git.ignoreLimitWarning": true
+      }
+    }
+  },
+  "postCreateCommand": "dotnet restore",
+  "remoteUser": "vscode",
+  "forwardPorts": [
+    5000,
+    5001
+  ],
+  "portsAttributes": {
+    "5000": {
+      "label": "Application HTTP",
+      "onAutoForward": "notify"
+    },
+    "5001": {
+      "label": "Application HTTPS",
+      "onAutoForward": "notify"
+    }
+  }
+}
