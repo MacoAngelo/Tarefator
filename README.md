@@ -255,6 +255,37 @@ TarefaService --> Tarefa
 - ✨ Novas funcionalidades
 - 🚀 Otimizações de performance
 
+## ⌨️ Atalhos do GitHub Copilot
+
+Aprenda a usar o Copilot de forma eficiente em sua IDE favorita!
+
+### Visual Studio Code
+
+| Ação | Atalho |
+|------|--------|
+| Aceitar sugestão completa | `Tab` |
+| Aceitar sugestão por palavra | `Ctrl + →` (Ctrl + Seta Direita) |
+| Ver próxima sugestão | `Alt + ]` |
+| Abrir Copilot Chat | `Ctrl + Shift + I` (inline) |
+| Descartar sugestão | `Esc` |
+
+### Visual Studio 2026
+
+| Ação | Atalho |
+|------|--------|
+| Aceitar sugestão completa | `Tab` |
+| Aceitar sugestão por palavra | `Ctrl + →` (Ctrl + Seta Direita) |
+| Descartar sugestão | `Esc` |
+
+### 💡 Dicas de Uso
+
+- **Prompt rápido**: Use `Ctrl + Shift + I` (VS Code) para fazer perguntas ao Copilot sem interromper o fluxo
+- **Múltiplas sugestões**: Quando o Copilot oferece sugestões, use `Alt + ]` para navegar entre todas
+- **Aceitar parcial**: Se uma sugestão é quase perfeita, use `Ctrl + →` para aceitar palavra por palavra e parar quando necessário
+- **Combine com Chat**: Use o Chat para entender a lógica, depois deixe o Copilot gerar o código
+
+---
+
 ## 📖 Recursos para Aprender
 
 ### Microsoft Learn
