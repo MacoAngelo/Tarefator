@@ -38,6 +38,8 @@ public class TarefaService
             return false;
 
         tarefa.Concluida = true;
+        tarefa.DataConclusao = DateTime.Now;
+
         return true;
     }
 
