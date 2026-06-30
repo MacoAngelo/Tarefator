@@ -51,6 +51,21 @@ public class TarefaService
         return true;
     }
 
+    /*
+     * TODO: Gera método para edição de tarefas, permitindo alterar a descrição de uma tarefa existente.
+     * Regras: Deve receber o ID da tarefa e a nova descrição. Se a tarefa não existir, deve contornar sem estourar exceção. Se a descrição for inválida (vazia ou nula), deve lançar uma exceção.
+     * Retorno: true se a edição for bem-sucedida, false caso contrário.
+     */
+    public bool Editar(int id, string novaDescricao)
+    {
+        if (string.IsNullOrWhiteSpace(novaDescricao))
+            throw new ArgumentException("Descrição não pode estar vazia!");
+        var tarefa = _tarefas.FirstOrDefault(t => t.Id == id);
+        if (tarefa == null)
+            return false;
+        tarefa.Descricao = novaDescricao;
+        return true;
+    }
 
     /// <summary>
     /// Registra os dados de tarefas existentes em um arquivo JSON.
